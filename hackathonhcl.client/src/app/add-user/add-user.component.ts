@@ -17,6 +17,8 @@ export class AddUserComponent {
       password: ['', [Validators.required]]
     })
   }
-
+  getFormCOntrol(formControlName: string) {
+    return this.addFormGroup.get(formControlName)
+  }
 
 }
