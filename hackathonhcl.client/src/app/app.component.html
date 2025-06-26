@@ -22,7 +22,7 @@
 <h1 id="tableLabel">Healthcare Staff Shift Scheduler and Attendance Tracker</h1>
 
 <!--<div *ngIf="isLoggedIn" class="sidebar p-3">-->
-<div class="sidebar p-3">
+<div *ngIf="isLoggedIn()" class="sidebar p-3">
   <h6 class="text-secondary">Main Menu</h6>
   <ul class="nav flex-column">
     <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>

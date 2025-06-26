@@ -85,7 +85,10 @@ namespace HackathonHCL.Server
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-
+            app.UseCors(x => x.WithOrigins("https://localhost:4200")
+                  .AllowAnyHeader()
+                  .AllowAnyMethod()
+                  .AllowCredentials()); 
             app.UseHttpsRedirection();
 
             app.UseAuthorization();

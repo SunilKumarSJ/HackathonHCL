@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { UserService } from './services/user.service';
 
 interface WeatherForecast {
   date: string;
@@ -15,23 +16,25 @@ interface WeatherForecast {
 })
 export class AppComponent implements OnInit {
   public forecasts: WeatherForecast[] = [];
-  isLoggedIn = false;
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private userService: UserService) { }
 
-  ngOnInit() {
-    this.getForecasts();
+  ngOnInit()
+  {
+    this.removeToken();
+  }
+  isLoggedIn() {
+    return this.userService.isLoggedIn();
   }
 
-  getForecasts() {
-    this.http.get<WeatherForecast[]>('/weatherforecast').subscribe(
-      (result) => {
-        this.forecasts = result;
-      },
-      (error) => {
-        console.error(error);
-      }
-    );
+  isInRoles(roles: string[]) {
+    return this.userService.isInRole(roles);
+  }
+
+  removeToken() {
+    localStorage.removeItem('token');
   }
 
   title = 'hackathonhcl.client';
+
+
 }

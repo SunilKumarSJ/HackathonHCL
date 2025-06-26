@@ -2,7 +2,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { Route, RouterModule } from '@angular/router';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { LayoutComponent } from './layout/layout.component';
@@ -26,7 +26,7 @@ const routes: Route[] = [
     AddUserComponent
   ],
   imports: [
-    BrowserModule, HttpClientModule, RouterModule.forRoot(routes)
+    BrowserModule, HttpClientModule, FormsModule, ReactiveFormsModule, RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]

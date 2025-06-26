@@ -1,32 +1,20 @@
 <div class="container" style="max-width: 400px; margin-top: 100px;">
   <h3 class="text-center">Admin Login</h3>
-  <form >
+  <form [formGroup]="loginFormGroup">
     <div class="form-group">
-      <label for="username">Username</label>
-      <input type="text"
-             class="form-control"
-             id="username"
-             name="username"
-             required
-             >
+      <input type="text" class="form-control" placeholder="UserName" formControlName="userName" />
+      <label class="form-label" for="form2Example1">UserName</label>
+      <span class="text-danger" *ngIf="(submit) && (getFormCOntrol('userName')?.hasError('required'))">Please enter  UserName.</span>
     </div>
 
     <div class="form-group">
-      <label for="password">Password</label>
-      <input type="password"
-             class="form-control"
-             id="password"
-             name="password"
-             required
-             >
+      <input type="password" class="form-control" placeholder="Password" formControlName="password" />
+      <label class="form-label" for="form2Example1">Password</label>
+      <span class="text-danger" *ngIf="(submit) && (getFormCOntrol('userName')?.hasError('required'))">Please enter  UserName.</span>
     </div>
 
-    <button type="submit" class="btn btn-primary btn-block" [disabled]="false">
+    <button type="submit" class="btn btn-primary btn-block" (click)="login()">
       Login
     </button>
-
-    <div *ngIf="loginError" class="alert alert-danger" style="margin-top: 10px;">
-      {{ loginError }}
-    </div>
   </form>
 </div>
