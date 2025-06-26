@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { UserService } from '../services/user.service';
 
 @Component({
   selector: 'app-add-user',
@@ -6,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./add-user.component.css']
 })
 export class AddUserComponent {
-
+  addFormGroup: FormGroup;
+  submit = false;
+  
 }
