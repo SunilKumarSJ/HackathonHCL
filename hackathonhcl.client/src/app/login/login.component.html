@@ -1,0 +1,32 @@
+<div class="container" style="max-width: 400px; margin-top: 100px;">
+  <h3 class="text-center">Admin Login</h3>
+  <form >
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text"
+             class="form-control"
+             id="username"
+             name="username"
+             required
+             >
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password"
+             class="form-control"
+             id="password"
+             name="password"
+             required
+             >
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-block" [disabled]="false">
+      Login
+    </button>
+
+    <div *ngIf="loginError" class="alert alert-danger" style="margin-top: 10px;">
+      {{ loginError }}
+    </div>
+  </form>
+</div>

@@ -1,0 +1,124 @@
+<div class="container">
+  <h2>USers</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <input type="text" class="form-control" placeholder="search" />
+    </div>
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4">
+      <button class="btn btn-primary pull-right" [routerLink]="['/app-add-user']">Add User</button>
+    </div>
+  </div>
+
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Role</th>
+        <th>Department</th>
+        <th>Position</th>
+        <th>Contact</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Sunil</td>
+        <td>Admin</td>
+        <td>Cardio</td>
+        <td>Radiology</td>
+        <td>Cardiologist</td>
+        <td>
+          <a href="#" class="btn btn-sm" data-toggle="modal" data-target="#editProjectModalDialog">
+            <span class="glyphicon glyphicon-edit editbtn"></span>
+          </a>
+          <a href="#" class="btn btn-sm" data-toggle="modal" data-target="#deleteProjectModalDialog">
+            <span class="glyphicon glyphicon-trash editbtn" style="color:red"></span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Sunil</td>
+        <td>Admin</td>
+        <td>Cardio</td>
+        <td>Radiology</td>
+        <td>Cardiologist</td>
+        <td>
+          <a href="#" class="btn btn-sm" data-toggle="modal" data-target="#editProjectModalDialog">
+            <span class="glyphicon glyphicon-edit editbtn"></span>
+          </a>
+          <a href="#" class="btn btn-sm" data-toggle="modal" data-target="#deleteProjectModalDialog">
+            <span class="glyphicon glyphicon-trash editbtn" style="color:red"></span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Sunil</td>
+        <td>Admin</td>
+        <td>Cardio</td>
+        <td>Radiology</td>
+        <td>Cardiologist</td>
+        <td>
+          <a href="#" class="btn btn-sm" data-toggle="modal" data-target="#editProjectModalDialog">
+            <span class="glyphicon glyphicon-edit editbtn"></span>
+          </a>
+          <a href="#" class="btn btn-sm" data-toggle="modal" data-target="#deleteProjectModalDialog">
+            <span class="glyphicon glyphicon-trash editbtn" style="color:red"></span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Sunil</td>
+        <td>Admin</td>
+        <td>Cardio</td>
+        <td>Radiology</td>
+        <td>Cardiologist</td>
+        <td>
+          <a href="#" class="btn btn-sm" data-toggle="modal" data-target="#editProjectModalDialog">
+            <span class="glyphicon glyphicon-edit editbtn"></span>
+          </a>
+          <a href="#" class="btn btn-sm" data-toggle="modal" data-target="#deleteProjectModalDialog">
+            <span class="glyphicon glyphicon-trash editbtn" style="color:red"></span>
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="row">
+    <div class="col-md-2">
+      <label>No of records</label>
+      <select class="form-control" style="width:revert;height:28px;">
+        <option>Select</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+      </select>
+    </div>
+    <div class="col-md-8">
+      <div class="col-lg-4 col-md-4 my-2 d-inline-flex align-items-center justify-content-lg-center" style="margin-left:300px">Showing 10 of 50 entries</div>
+    </div>
+    <div class="col-md-2 pull-right">
+      <ul class="pagination pagination-sm">
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+<!--<div class="modal fade" id="addProjectModalDialog" role="dialog">
+  <app-project-create></app-project-create>
+</div>
+<div class="modal fade" id="editProjectModalDialog" role="dialog">
+  <app-project-edit></app-project-edit>
+</div>
+<div class="modal fade" id="deleteProjectModalDialog" role="dialog">
+  <app-user-delete [title]="'project'"></app-user-delete>
+</div>-->

@@ -1,0 +1,39 @@
+<style>
+  body {
+    min-height: 100vh;
+  }
+
+  .sidebar {
+    height: 100vh;
+    position: fixed;
+    top: 56px;
+    left: 0;
+    width: 220px;
+    background-color: #f8f9fa;
+    border-right: 1px solid #dee2e6;
+  }
+
+  .content {
+    margin-left: 220px;
+    padding: 1.5rem;
+    margin-top: 56px;
+  }
+</style>
+<h1 id="tableLabel">Healthcare Staff Shift Scheduler and Attendance Tracker</h1>
+
+<!--<div *ngIf="isLoggedIn" class="sidebar p-3">-->
+<div class="sidebar p-3">
+  <h6 class="text-secondary">Main Menu</h6>
+  <ul class="nav flex-column">
+    <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
+    <li class="nav-item"><a class="nav-link" [routerLink]="['/app-users']">User Management</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Shift Scheduler</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Attendance Tracker</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Reports</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Settings</a></li>
+    <li class="nav-item mt-3"><a class="btn btn-outline-danger w-100" href="#">Logout</a></li>
+  </ul>
+</div>
+<div id="section">
+  <router-outlet></router-outlet>
+</div>
