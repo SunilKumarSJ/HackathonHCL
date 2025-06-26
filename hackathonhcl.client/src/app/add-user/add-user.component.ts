@@ -11,5 +11,12 @@ import { UserService } from '../services/user.service';
 export class AddUserComponent {
   addFormGroup: FormGroup;
   submit = false;
-  
+  constructor(private formbuilder: FormBuilder, private userService: UserService, private router: Router) {
+    this.addFormGroup = this.formbuilder.group({
+      userName: ['', [Validators.required]],
+      password: ['', [Validators.required]]
+    })
+  }
+
+
 }
