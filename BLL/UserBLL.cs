@@ -4,7 +4,7 @@ using DAL.Entity;
 namespace BLL
 {
     public interface IUserBLL
-    {
+    {//
         Task<User> Validate(string userName, string password);
         Task<UserList> GetUsers();
         Task<User> GetUserById(int id);

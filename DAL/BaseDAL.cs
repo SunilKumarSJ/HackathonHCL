@@ -10,7 +10,7 @@ namespace DAL
         {
             this.connectionstring = configuration.GetConnectionString("HCLHackathonConnectionString");
         }
-
+        //
         public SqlConnection CreateConnection()
         {
             return new SqlConnection(connectionstring);

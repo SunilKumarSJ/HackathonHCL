@@ -1,7 +1,7 @@
 ﻿namespace HackathonHCL.Server.Response
 {
     public class ShiftScheduleWithAttendanceResponse
-    {
+    {//
         public int ScheduleId { get; set; }
 
         public int UserId { get; set; }

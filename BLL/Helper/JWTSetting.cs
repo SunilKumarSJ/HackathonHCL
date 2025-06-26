@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace BLL.Helper
 {
     public class JWTSetting
-    {
+    {//
         public string AccessTokenKey { get; set; }
         public string TokenExpiryTimeInMinutes { get; set; }
         public string CookieExpriryTimeMinutes { get; set; }

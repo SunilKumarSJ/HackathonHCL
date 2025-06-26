@@ -31,7 +31,7 @@ namespace BLL
             var jwtTokenHandler = new JwtSecurityTokenHandler();
             var accessTokenKey = Encoding.ASCII.GetBytes(appSettings.Value.AccessTokenKey);
             var tokenDescriptor = new SecurityTokenDescriptor
-            {
+            {//
                 Issuer = appSettings.Value.Issuer,
                 Audience = "",
                 Subject = new ClaimsIdentity(new Claim[]

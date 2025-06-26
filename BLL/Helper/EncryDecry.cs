@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace BLL.Helper
 {
     public class EncryDecry
-    {
+    {//
         public static string DecryptString(string encrString)
         {
             byte[] b;

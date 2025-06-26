@@ -9,9 +9,9 @@ import { LayoutComponent } from './layout/layout.component';
 import { UserComponent } from './user/user.component';
 import { AddUserComponent } from './add-user/add-user.component';
 const routes: Route[] = [
-  { path: 'login', component: LoginComponent },                   // Wildcard route
-  { path: 'app-root', component: AppComponent },                   // Wildcard route
-  { path: 'app-users', component: UserComponent },                   // Wildcard route
+  { path: 'login', component: LoginComponent },                   
+  { path: 'app-root', component: AppComponent },                  
+  { path: 'app-users', component: UserComponent },                   
   { path: 'app-add-user', component: AddUserComponent },                   // Wildcard route
   { path: '', pathMatch: 'full', redirectTo: 'login' },// Wildcard route
 ];

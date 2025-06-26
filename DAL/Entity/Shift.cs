@@ -8,7 +8,7 @@ namespace DAL.Entity
 {
     public class Shift:BaseEntity
     {
-        public int Id { get; set; }
+        public int Id { get; set; }//
 
         public string ShiftName { get; set; } = string.Empty;
 

@@ -9,7 +9,7 @@ export class user {
   departmentName: string = '';
   contactNo: string = '';
 }
-
+//
 export class auth {
   email: string;
   password: string;

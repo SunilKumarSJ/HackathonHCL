@@ -73,7 +73,7 @@ namespace DAL
 
         #region Create
         /// <summary>
-        ///Signup the user
+        ///Create the user
         /// </summary>
         /// <param name="user"></param>
         /// <returns></returns>

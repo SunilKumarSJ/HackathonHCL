@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace DAL.Entity
 {
     public class ShiftSchedules : BaseEntity
-    {
+    {//
         public int Id { get; set; }
 
         public int UserId { get; set; }

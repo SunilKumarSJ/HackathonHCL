@@ -28,7 +28,7 @@ namespace HackathonHCL.Server.Controllers
 
         #region Login
         /// <summary>
-        /// 
+        /// //
         /// </summary>
         /// <param name="authModel"></param>
         /// <returns></returns>

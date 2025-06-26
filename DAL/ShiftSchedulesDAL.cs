@@ -25,7 +25,7 @@ namespace DAL
         #region AssignShiftToUser
 
         /// <summary>
-        /// 
+        /// ss
         /// </summary>
         /// <param name="userId"></param>
         /// <param name="shiftId"></param>

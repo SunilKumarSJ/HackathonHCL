@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace DAL.Entity
 {
     public class BaseEntity
-    {
+    {//
         public int CreatedBy { get; set; }
 
         public DateTime CreatedDate { get; set; }

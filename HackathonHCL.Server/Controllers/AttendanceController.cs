@@ -16,6 +16,12 @@ namespace HackathonHCL.Server.Controllers
             this.attendanceBLL = attendanceBLL;
         }
 
+        #region CheckIn
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
         [Route("CheckIn")]
         [HttpPut]
         public async Task<BLLResponse> CheckIn(int userId)
@@ -33,6 +39,7 @@ namespace HackathonHCL.Server.Controllers
 
             return bLLResponse;
         }
+        #endregion
 
         [Route("CheckOut")]
         [HttpPut]

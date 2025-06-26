@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace BLL
 {
     public interface IAttendanceBLL
-    {
+    {//
         Task<int> CheckIn(int userId);
         Task<int> CheckOut(int userId);
     }
